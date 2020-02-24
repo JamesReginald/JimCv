@@ -1,10 +1,29 @@
-/* css variables */ 
-@import url(./partials/_variables.css);
 
-/* import global styling */ 
-@import url(./partials/_global.css);
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+:root{
+    --primary-color:#666;
+    --secondairy-color: black;
+    --accent-color: #fec397;
+    --background-color-dark: #2d3142;
+    --text-color-dark: whitesmoke;
+    --nav-background: whitesmoke;
+    --border-color:#111;
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
 
 /* start navigation section*/
+
+
 .header_area{
     position: absolute;
     z-index: 2;
@@ -71,6 +90,18 @@ nav ul li a:hover,.nav-wrapper ul li a.active{
 .hidden{
     display: none;
 }
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left:0;
+    right: 0;
+    background-color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
 /* end navigation section*/
 
 /*MODAL*/
