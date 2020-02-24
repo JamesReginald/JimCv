@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+   
+    <!---custom stylesheet-->
+    <link rel="stylesheet" href="../css/style.css" />
+    
+    <!---responsive styelsheet-->
+    <link rel="stylesheet" href="../css/responsive.css"/>
+  </head>
+  <body>
+   <header class="header_area">
+     <div class="main-menu">
+      <div class="container">
+        <nav>
+          <input type="checkbox" id="nav" class="hidden">
+          <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+            <!-- <i></i> -->
+          </label>
+          <div class="nav-wrapper">
+            <ul>
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="#" class="active">Services</a></li>
+              <li><a href="about-me.html">about me</a></li>
+              <!-- <li><a href="experience.html">Experience</a></li> -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+     </div>
+   </header>
+
+    <div class="bimg1">
+      <div class="ptext">
+        <span class="border">
+          jimmie van Vliet
+        </span>
+        <div>
+          <span class="border trans work">
+            Software developer
+          </span>
+        </div>
+    <div class="btn-work">
+      <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+        Contact
+      </a>
+    </div>
+  </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">
+                  Contact Me
+              </h4>
+          </div>
+          <div class="modal-body">
+             <div class="contact-form">
+               <form id="contact-form" method="post" action="../php/contact-form-handler.php">
+                 <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                 <br>
+                 <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                 <br>
+                 <textarea name="message" class="form-control" placeholder="Message" rows="4" required>
+                 </textarea> <br>
+                 <input type="submit" class="form-control submit" value="SEND MESSAGE">
+               </form>
+             </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <section class="section section-dark">
+      <h2>Web development</h2>
+      <div class="webdev">
+        <ul>
+          
+          <li>Do you require a beutiful designed website?<br>
+        From basic html's to advanced spring based web applications.<br>
+      Everything is possible.
+    <br></li>
+      <li>
+        <span class="row clearfix">
+          <img src="../img/page3/springboot.png">
+          <img src="../img/page3/img1.jpg" alt="">
+        </span>
+      </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="bimg2">
+        <div class="ptext">
+          <span class="border trans">
+          </span>
+        </div>
+      </div>
+
+      <section class="section section-light">
+        <h2>Mobile app development</h2>
+       <div class="webdev">
+        <ul>
+          <li>Do you want an mobile app for your company?<br>
+         With Flutter I am able to create mobile applications for <br>
+       both android as IOs. Quick and easy.</li>
+          <li><span class="clearfix">
+          <div class="row">
+            <img src="../img/page3/flutter.png" alt="">
+            <img src="../img/page3/firebase.png" alt="">
+          </div>
+          </span></li>
+        </ul>
+       </div>
+      </section>
+
+       <div class="bimg3">
+            <div class="ptext">
+              <span class="border trans">
+               
+              </span>
+            </div>
+          </div>
+
+          <section class="section section-dark">
+            <h2>Business intelligence</h2>
+          <div class="webdev">
+            <ul>
+              <li>
+              Using power bi and advanced quantitative methods <br>I
+               am able to offer new insights in your business.<br>
+               Using deep learning models I am currently working on<br>
+               an AI driven Tradebot using plain Java and python. <br>
+               <br>
+
+              </li>
+             <li>
+              <span class="clearfix">
+              <div class="row">
+                <img src="../img/page3/BI.jpg" alt="">
+                <img src="../img/page3/power-BI.png" alt="">
+              </div>
+              </span>
+             </li>
+            
+            </ul>
+          </div>
+          </section>
+            <div class="bimg1">
+              <div class="ptext">
+                <div class="btn-work">
+                  <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                    Contact
+                  </a>
+                </div>
+            </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!--JQuery js File-->
+  <script src="../js/jquery.3.4.1.js"></script>
+
+  <script src="../js/main.js"></script>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    
+    <!---custom stylesheet-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!---responsive styelsheet-->
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <div class="container">
+          <nav>
+            <input type="checkbox" id="nav" class="hidden" />
+            <label for="nav" class="nav-btn">
+              <i></i>
+              <i></i>
+              <i></i>
+              <!-- <i></i> -->
+            </label>
+            <div class="nav-wrapper">
+              <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="active">About me</a></li>
+                <!-- <li><a href="experience.html">Experience</a></li> -->
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border">
+          jimmie van Vliet
+        </span>
+        <div>
+          <span class="border trans work">
+            Software developer
+          </span>
+        </div>
+    <div class="btn-work">
+      <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+        Contact
+      </a>
+    </div>
+  </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">
+                  Contact Me
+              </h4>
+          </div>
+          <div class="modal-body">
+             <div class="contact-form">
+               <form id="contact-form" method="post" action="../php/contact-form-handler.php">
+                 <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                 <br>
+                 <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                 <br>
+                 <textarea name="message" class="form-control" placeholder="Message" rows="4" required>
+                 </textarea> <br>
+                 <input type="submit" class="form-control submit" value="SEND MESSAGE">
+               </form>
+             </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <section class="section section-dark about-me">
+      <h2>About me</h2>
+      <div class="text-about clearfix">
+        <ul>
+          <li><p>
+            <span class="me">
+              I am a driven person with strong analytical capabilities and<br>
+             a passion for personal growth. I value objectivity and the pursuit of knowledge <br>
+             I like the bigger picture. Understanding the world, we live in and mechanisms behind existing. 
+             <br>Philosophy, Science and Engineering.  
+             Understanding daily life in an abstract way.<br>
+             <br>
+             In recently decided to leave my profesion as Foreign Exchange trader<br>
+             to persuit my passion for software development. 
+            </span> 
+          </p></li>
+          <li> <img src="../img/index/me-small.jpg" alt="" /></li>
+        </ul>
+      
+         
+          
+        
+      </div>
+    </section>
+
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">
+          Graduate degree
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <a href="https://www.iva-driebergen.nl/">
+        <span class="logo"> <img src="../img/index/iva.png" alt=""/></span
+      ></a>
+      <h4 class="edu">Bachelor Business & Administration</h4>
+      <div class="graph">
+        <canvas id="BBA" height="80px"></canvas>
+      </div>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">
+          Post Graduate degree
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <a href="https://www.bradford.ac.uk/management/"
+        ><span class="logo"> <img src="../img/index/bradford.png" alt=""/></span
+      ></a>
+      <h4 class="edu">Msc Finance & Investment</h4>
+      <div class="graph">
+        <canvas id="MSC" height="80px"></canvas>
+      </div>
+    </section>
+    <div class="pimg1">
+      <div class="ptext">
+        <div class="btn-work">
+          <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--JQuery js File-->
+  <script src="../js/Chart.min.js"></script>
+
+  <!--JQuery js File-->
+  <script src="../js/jquery.3.4.1.js"></script>
+
+  <script src="../js/main.js"></script>
+</html>

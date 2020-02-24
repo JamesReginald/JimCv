@@ -1,0 +1,283 @@
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+/* start navigation section*/
+.header_area{
+    position: absolute;
+    z-index: 2;
+    right:  .2rem;
+}
+.nav{
+    float: left;    
+}
+.nav-wrapper a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li:not(:first-child){
+    
+    margin-left: 48px;
+}
+nav ul li:last-child{
+    margin-right: 24px;
+}
+nav ul li a{
+    display: inline-block;
+    outline: none;
+    font-weight: 700;
+    opacity: 1;
+    color:  var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li a:hover,.nav-wrapper ul li a.active{
+   
+    color: var(--accent-color);
+}
+#nav:checked + .nav-btn{
+    transform: rotate(45deg);
+}
+#nav:checked + .nav-btn i {
+    transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1){
+    transform: translateY(6px) rotate(180deg);
+}
+#nav:checked + .nav-btn i:nth-child(2){
+    opacity: 0;
+}
+#nav:checked + .nav-btn i:nth-child(3){
+    transform: translateY(6px) rotate(90deg);
+}
+#nav:checked ~ .nav-wrapper{
+    opacity: 1;
+}
+#nav:checked ~ .nav-wrapper ul li a{
+    opacity: 1;
+    transform: translateX(0);
+}
+.hidden{
+    display: none;
+}
+/* end navigation section*/
+
+/*MODAL*/
+form{
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #666;
+    border-bottom: 1px solid var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 5px;
+
+}
+input{
+    height: 45px;
+}
+form .submit{
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    padding: 1rem;
+    height: 4rem;
+    margin-top: 20px;
+}
+form .submit:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* start body section*/
+ .border.trans.work{
+    color: var(--secondairy-color);
+    font-weight: 700;
+    line-height: 7rem;
+}
+.btn-work a{
+    text-decoration: none;
+    font-size: 27px;
+    background-color: var(--secondairy-color);
+    border: transparent;
+    color: var(--text-color-dark);
+    padding: 1rem;
+    text-transform: uppercase ;
+  align-content: center;
+  box-shadow: var(--box-shadow);
+}
+ .btn-work a:hover{
+    background-color: transparent;
+    color: var(--secondairy-color);
+    font-weight: 700;
+}
+.logo > img{
+   width: 20%;
+
+}
+.logo > img:hover{
+    filter: brightness(0.15);
+}
+.edu{
+    letter-spacing: .2rem;
+}
+h2{
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.pimg1, .pimg2, .pimg3, .aimg1, .aimg2, .aimg3 ,.bimg1, .bimg2, .bimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parallax
+    scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+
+
+.about-me .text-about img
+{
+  
+    overflow: auto;
+    float: right;
+    right: 1rem;
+    border-radius: 50%;
+    width: 20%;
+    box-shadow: var(--box-shadow);
+}
+body > section.section.section-dark.about-me > div > p > span{
+   padding-right: 30rem;
+  position:relative;
+}
+.pimg1{
+    background-image: url(../img/index/wallpaper.jpg);
+    min-height: 100%;
+
+}
+.pimg2{
+    background-image: url(../img/index/wallpaper2.jpg);
+    min-height: 400px;
+    
+}
+.pimg3{
+    background-image: url(../img/index/wallpaper3.jpg);
+    min-height: 400px;  
+}
+.ptext, .atext, .btext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:var(--secondairy-color);
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+ .border{
+    background-color: var(--border-color);
+    padding: 20px;
+    color: var(--text-color-dark);
+}
+
+ .border.trans{
+    background-color: transparent;
+}
+
+
+/*page home*/
+.home img, .webdev img{
+    margin-left: 50px;
+    overflow: auto;
+    float: right;
+    right: 1rem;
+    width: 20%;
+    
+}
+.prog ul li, .cert ul li, .text-about ul li, .webdev ul li{
+    display: inline;
+    text-decoration: none;
+}
+.cert li img{
+    width: 10%;
+    margin: 3rem;
+}
+.prog li img{
+   margin: 2rem;
+    width: 7%;
+}
+.aimg1{
+    background-image: url(../img/service/wallpaper.jpg);
+    min-height: 100%;
+
+}
+.aimg2{
+    background-image: url(../img/service//wallpaper2.jpg);
+    min-height: 400px;
+    
+}
+.aimg3{
+    background-image: url(../img/service//wallpaper3.jpg);
+    min-height: 400px;
+    
+}
+/* services page*/
+
+.webdev img{
+    margin-left: 50px;
+    margin-bottom: 2rem;
+    overflow: auto;
+    right: 1rem;
+    width: 40%;
+     
+}
+
+.bimg1{
+    background-image: url(../img/page3//wallpaper.jpg);
+    min-height: 100%;
+
+}
+.bimg2{
+    background-image: url(../img/page3/wallpaper2.jpg);
+    min-height: 400px;
+    
+}
+.bimg3{
+    background-image: url(../img/page3//wallpaper3.jpg);
+    min-height: 400px;
+    
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    background-color: whitesmoke ;
+    color: var(--primary-color);
+}
+.section-dark{
+    background-color: var(--background-color-dark);
+    color:var(--text-color-dark);
+}
+
+
